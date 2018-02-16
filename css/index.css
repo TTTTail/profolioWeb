@@ -36,7 +36,7 @@ li{
 
 #tImg{
 	width: 100%;
-	background-image: url(https://s3.amazonaws.com/ttttail-images/bg-img.png);
+	background-image: url(../img/bg-img.png);
 	background-position: center bottom;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
