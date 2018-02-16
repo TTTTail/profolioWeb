@@ -1,9 +1,22 @@
+var iHeight = window.innerHeight;
+var iWidth = window.innerWidth;
+var heightT = iHeight*0.3;
+var heightB = iHeight*0.05;
+var loadingHTML = '<div id="loadingDiv" style="width: 100%;height: '+iHeight+'px;display: block;z-index: 99;background-color: #fff;position: absolute;"><div style="font-size: 1em;color:#000;margin-top:'+heightT+'px;margin-bottom:0px;">16:9 for the best<br>a rabbit whose interest is to fly in the sky with ears and tug at girls\' heartstrings</div><img src="img/rabbit.gif" style="width: 40%;height: auto;margin:auto;"></div>';
+
+document.write(loadingHTML);
+
+function completeLoading() {  
+            if (document.readyState == "complete") {  
+                var loadingMask = document.getElementById('loadingDiv');  
+                loadingMask.parentNode.removeChild(loadingMask);  
+                document.getElementById('body').style.overflow='visible'; 
+            }  
+        }  
 
 
 
 window.onload = function(){
-	var iHeight = window.innerHeight;
-	var iWidth = window.innerWidth;
 	var sHeight = window.screen.height;
 	var sWidth = window.screen.width;
 
@@ -19,8 +32,8 @@ window.onload = function(){
 	var oLi = document.getElementById('list').getElementsByTagName("li");
 	var oImg = oList.getElementsByTagName("img");
 	var oIntro = document.getElementById('intro');
+	var oBody = document.getElementsByTagName('body');
 
-	
 	oTimg.style.height = iHeight*0.67 + 'px'; 
 	oTimg.style.paddingTop = iHeight*0.25 + 'px'; 
 
@@ -59,12 +72,12 @@ window.onload = function(){
 
 	document.getElementById('cir').style.borderWidth = iWidth*0.005 +'px';
 
+	window.setTimeout("completeLoading();",5000);
+
 }
-<<<<<<< HEAD
+
 	var oAd=['sleepyhead.html','pioneer.html','phone.html','kindle.html','alley.html','others.html']
-=======
-	var oAd=['sleepyhead.html','pioneer.html','phone.html','kindle.html','alley.html','others.html'];
->>>>>>> 781bd5df1fdf87032c76ec35ee00cada677a42d8
+
 	var turn= function(num){
 		window.open(oAd[num])	}
 
