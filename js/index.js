@@ -60,11 +60,9 @@ window.onload = function(){
 	document.getElementById('cir').style.borderWidth = iWidth*0.005 +'px';
 
 }
-<<<<<<< HEAD
+
 	var oAd=['sleepyhead.html','pioneer.html','phone.html','kindle.html','alley.html','others.html']
-=======
-	var oAd=['sleepyhead.html','pioneer.html','phone.html','kindle.html','alley.html','others.html'];
->>>>>>> 781bd5df1fdf87032c76ec35ee00cada677a42d8
+
 	var turn= function(num){
 		window.open(oAd[num])	}
 
