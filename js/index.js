@@ -52,6 +52,7 @@ window.onload = function(){
 
 
 }
+	var oAd=['sleepyhead.html','pioneer.html','phone.html','kindle.html','alley.html','others.html'];
 	var turn= function(num){
 		window.open(oAd[num])	}
 
