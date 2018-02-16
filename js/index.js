@@ -50,10 +50,8 @@ window.onload = function(){
 		oImg[i].style.height = 'auto';
 	};
 
-	alert(oImg[0].height);
 
 }
-	var oAd=[]
 	var turn= function(num){
 		window.open(oAd[num])	}
 
