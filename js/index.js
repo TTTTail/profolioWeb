@@ -2,7 +2,7 @@ var iHeight = window.innerHeight;
 var iWidth = window.innerWidth;
 var heightT = iHeight*0.3;
 var heightB = iHeight*0.05;
-var loadingHTML = '<div id="loadingDiv" style="width: 100%;height: '+iHeight+'px;display: block;z-index: 99;background-color: #fff;position: absolute;"><div style="font-size: 1em;color:#000;margin-top:'+heightT+'px;margin-bottom:0px;">Fullscreen for the best<br>a rabbit whose interest is to fly in the sky with ears and tug at girls\' heartstrings</div><img src="img/rabbit.gif" style="width: 40%;height: auto;margin:auto;"></div>';
+var loadingHTML = '<div id="loadingDiv" style="width: 100%;height: '+iHeight+'px;display: block;z-index: 99;background-color: #fff;position: absolute;"><div style="font-size: 1em;color:#000;margin-top:'+heightT+'px;margin-bottom:0px;">fullscreen for the best<br>a rabbit whose interest is to fly in the sky with ears and tug at girls\' heartstrings</div><img src="img/rabbit.gif" style="width: 40%;height: auto;margin:auto;"></div>';
 
 document.write(loadingHTML);
 
@@ -75,7 +75,7 @@ window.onload = function(){
 
 	document.getElementById('cir').style.borderWidth = iWidth*0.005 +'px';
 
-	window.setTimeout("completeLoading();",500);
+	window.setTimeout("completeLoading();",5000);
 
 }
 
