@@ -2,7 +2,7 @@ var iHeight = window.innerHeight;
 var iWidth = window.innerWidth;
 var heightT = iHeight*0.3;
 var heightB = iHeight*0.05;
-var loadingHTML = '<div id="loadingDiv" style="width: 100%;height: '+iHeight+'px;display: block;z-index: 99;background-color: #fff;position: absolute;"><div style="font-size: 1em;color:#000;margin-top:'+heightT+'px;margin-bottom:0px;">16:9 for the best<br>a rabbit whose interest is to fly in the sky with ears and tug at girls\' heartstrings</div><img src="img/rabbit.gif" style="width: 40%;height: auto;margin:auto;"></div>';
+var loadingHTML = '<div id="loadingDiv" style="width: 100%;height: '+iHeight+'px;display: block;z-index: 99;background-color: #fff;position: absolute;"><div style="font-size: 1em;color:#000;margin-top:'+heightT+'px;margin-bottom:0px;">Fullscreen for the best<br>a rabbit whose interest is to fly in the sky with ears and tug at girls\' heartstrings</div><img src="img/rabbit.gif" style="width: 40%;height: auto;margin:auto;"></div>';
 
 document.write(loadingHTML);
 
@@ -54,8 +54,11 @@ window.onload = function(){
 	oLin.style.top = (iHeight*0.96-oLinH)+'px';
 	oFlo.style.top = (iHeight*0.73 -oFloH-420)+'px';
 
+/*
 	oList.style.height = iWidth*0.5 +'px';
+	oList.style.width = iWidth*0.8 + 'px';
 	oList.style.borderRadius = iWidth*0.05 +'px';
+*/
 	oBimg.style.paddingTop = iHeight*0.16 + 'px';
 
 	oIntro.style.width = iWidth + 'px';
@@ -65,14 +68,14 @@ window.onload = function(){
 	oIntro.style.paddingBottom = iHeight*0.03 + 'px';
 
 
-	for (var i = oImg.length - 1; i >= 0; i--) {
-		oImg[i].style.width = 320 + 'px';
+	/*for (var i = oImg.length - 1; i >= 0; i--) {
+		oImg[i].style.width = 100 + '%';
 		oImg[i].style.height = 'auto';
-	};
+	};*/
 
 	document.getElementById('cir').style.borderWidth = iWidth*0.005 +'px';
 
-	window.setTimeout("completeLoading();",5000);
+	window.setTimeout("completeLoading();",500);
 
 }
 

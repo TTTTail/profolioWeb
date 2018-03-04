@@ -96,7 +96,9 @@ ul,li{
 }
 
 #list{
-	width: 80%;
+	height: 840px;
+	width: 1344px;
+	border-radius: 84px 84px 84px 84px;
 	background-color:white;
 	margin: auto; 
 
@@ -104,6 +106,7 @@ ul,li{
 
 #list ul{
 	box-sizing: border-box;
+	padding-top: 40px;
 	margin: auto;
 	align-content: center;
 	text-align: center;
@@ -124,6 +127,8 @@ b{
 }
 
 #list ul li img{
+	width: 100%;
+	height: auto;
 	position: relative;
 	z-index: 10;
 	}
@@ -136,11 +141,12 @@ b{
 	box-sizing: border-box;
 	width: 320px;
 	height: auto;
-	margin: auto;
+	margin-top: 80px;
 	text-align: center;
 	z-index: 8;
 	position: absolute;
 	}
+
 
 #cir{
 	width: 20%;
