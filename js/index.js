@@ -37,7 +37,8 @@ window.onload = function(){
 	oTimg.style.height = iHeight*0.67 + 'px'; 
 	oTimg.style.paddingTop = iHeight*0.25 + 'px'; 
 
-	oBimg.style.height = iHeight*1.8 + 'px'; 
+	oBimg.style.height = iHeight*1.8 + 'px';
+	oBimg.style.width = iWidth +'px'; 
 
 	oNav.style.width = iWidth*0.25 + 'px';
 	oNav.style.height = oTimg.style.height;
